@@ -11,7 +11,6 @@ It allows authenticated users to:
 
 ## Architecture Overview
 
-```mermaid
 flowchart TD
     A[User / Client App] -->|Login/Register| B[Flask API]
     B -->|JWT Authentication| C[User DB (SQLite/PostgreSQL)]
