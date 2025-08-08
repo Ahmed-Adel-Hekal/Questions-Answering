@@ -12,13 +12,13 @@ It allows authenticated users to:
 ## Architecture Overview
 
 flowchart TD
-    A[User / Client App] -->|Login/Register| B[Flask API]
-    B -->|JWT Authentication| C[User DB (SQLite/PostgreSQL)]
-    B -->|Upload Document| D[Document Preprocessor]
-    D -->|Chunk + Embed| E[FAISS Vector Store]
-    B -->|Ask Question| F[Retriever + OpenAI GPT]
-    E -->|Top Relevant Chunks| F
-    F -->|Final Answer| A
+    A[User / Client App] -->|Login/Register| B[Flask API] <br>
+    B -->|JWT Authentication| C[User DB (SQLite/PostgreSQL)] <br>
+    B -->|Upload Document| D[Document Preprocessor] <br>
+    D -->|Chunk + Embed| E[FAISS Vector Store] <br>
+    B -->|Ask Question| F[Retriever + OpenAI GPT] <br>
+    E -->|Top Relevant Chunks| F <br>
+    F -->|Final Answer| A <br>
 ---------
 ## Key Components
 
